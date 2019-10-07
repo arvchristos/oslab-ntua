@@ -1,0 +1,5 @@
+# Wirlesh mesh sensor character device driver
+
+This exercise contains the implementation of a character device driver for a wireless network of sensors. Those sensors are connected in a mesh network and provide data to e central collecting station. Each of those sensors collects brightness, temperature as well as sensor battery voltage levels. The sensors are collecting data and send it to the central station through a serial over USB connection. During the development process, the school didn't provide every team the set of sensors required. However, the mesh system was built inside the lab and we were provided a QEMU virtualmachine that exported a socket connection to the central device to the virtual local serial device `/dev/ttyS0`.  
+
+Throughout the development, we modified the `linux-chrdev.c` file to implement the character device driver logic. 
